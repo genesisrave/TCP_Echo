@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<main xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="schema2.xsd">
+
+<testcase interface="ANY">
+    <name>DEV_ETH2 - TCP ECHO TEST</name>
+    <description>
+        TCP ECHO TEST
+    </description>
+    <author>Ryan_P1</author>
+    <dldfile>ETH2_TCP_ECHO.DLD</dldfile>
+    <script>IOServer.pl</script>
+</testcase>
+
+</main>

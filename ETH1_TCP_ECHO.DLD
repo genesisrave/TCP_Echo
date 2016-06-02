@@ -1,0 +1,19 @@
+-f %TESTROOT%\config\testharness.dld
+
+ethernet.out 
+ethernet.p7s 
+*RUN=I:ethernet.out 
+*smdl=1 
+RESETSYSERR=1
+HOSTIP=192.168.11.4
+PORTNUM=5011
+LOOPCNT=10
+
+*NO.VXNCP=1
+*NO.VXCE=1
+*NO.VXBTE=1
+*NO.VXBT=1
+*NO.VXWIFI=1
+*NO.VXCTLS=1
+*NO.VXGUI=1
+*CEDM=1

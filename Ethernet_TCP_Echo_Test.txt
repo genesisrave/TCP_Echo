@@ -1,0 +1,55 @@
+
+		********************************
+		*   Ethernet - TCP Echo TEST   *
+		********************************
+
+===================
+Setup Requirements:
+===================
+	- Host PC with SimpleS.exe
+	- Router
+
+
+===============================	
+Simple Server Application Setup
+===============================
+	- Run Simple Server on Host PC. (For Windows 7 PC, run this as Administrator).
+	- Input Host PC IP Address in Interface field
+	- Input Host Port Number in Endpoint field. This should be the same with the PORTNUM variable in Tcp_Echo.DLD
+	- Input TCP in Protocol field.
+	- Press START Button. There should be no error displayed in the server. 
+	- There server should now display "Listening on port <endpoint>, protocol TCP" 	
+
+=============================	
+Test Application Requirement:
+=============================
+	- Modify makefile to indicate the correct BT SDK and EOS SDK file directory.
+	
+
+***********************	
+*   Test Procedure:   *
+***********************
+	1. Modify the APNAME.dld in TS20\Sanity_Test\Bluetooth\VFI_BT_AP
+		- *APADDR --> BT AP Address
+		- *LINK_KEY --> Link Key generated during pairing by using TS10\Broadcom_Bluetooth\DEV_BLUETOOTH\Discover_Pair application
+		
+	2. Modify ETH1_TCP_ECHO.DLD and/or ETH2_TCP_ECHO.DLD:
+		- HOSTIP --> Host PC IP Address
+		- PORTNUM --> Simples.exe port number
+	
+	3. Connect Ethernet port to the same TEST network as the Host PC.
+	
+	4. Start SimpleS.exe in Host PC. Input Host PC IP address and port number.
+		
+	5. Execute "runone Run_ETH1_TCP_ECHO.xml"
+		
+	6. Execute "runone Run_ETH2_TCP_ECHO.xml"
+
+
+	
+	
+	
+
+
+	
+
