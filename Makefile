@@ -17,7 +17,7 @@ clean :
 	-del *.o *.out *.p7s *.bak *.axf *.err
 
 ethernet.p7s : ethernet.out
-	FileSignature.exe -C "C:\TestSuite10\Common\SponsorCert.crt" -F "%cd%\ethernet.out" -CM
+	$(NEWFST)\FileSignature.exe -C "C:\TestSuite10\Common\SponsorCert.crt" -F "%cd%\ethernet.out" -CM
 	rename ethernet.out.p7s ethernet.p7s
 
 ethernet.out : ethernet.c 
