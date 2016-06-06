@@ -1,3 +1,6 @@
+VRXSDK = C:\VerixVAps\VRXSDK
+TESTROOT = C:\GitHub\OSSQA
+TLIBOBJS = -I C:\GitHub\OSSQA\tlib\Test.o -I C:\GitHub\OSSQA\tlib\TestRegistry.o -I C:\GitHub\OSSQA\tlib\tlib.o
 SDSIncludes = $(VRXSDK)\include
 EOSIncludes = D:\SDK\EOS_SDK\include
 EOSLibs = D:\SDK\EOS_SDK\lib\svc_net.o
@@ -18,4 +21,3 @@ ethernet.out : ethernet.c
 
 clean :
 	del *.o *.out *.p7s *.err *.bak
-
