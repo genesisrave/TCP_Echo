@@ -17,7 +17,7 @@ clean :
 	-del *.o *.out *.p7s *.bak *.axf *.err
 
 ethernet.out : ethernet.c 
-	$(VRXSDK)\bin\vrxcc $(COptions) -I $(TLIB_INCLUDE) -I $(TLIB_INC_2) -I $(EOSIncludes) -e ethernet.err ethernet.c  $(TLIBOBJS) $(EOSLibs) -o ethernet.out
+	$(VRXSDK)\bin\vrxcc $(COptions) -I $(TLIB_INCLUDE) -I $(TLIB_INC_2) -I $(EOSIncludes) -e ethernet.err ethernet.c -o ethernet.out $(TLIBOBJS) $(EOSLibs) 
 
 clean :
 	del *.o *.out *.p7s *.err *.bak
