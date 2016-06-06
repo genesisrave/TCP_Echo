@@ -1,4 +1,4 @@
-#VRXSDK = C:\VerixVAps\VRXSDK
+VRXSDK = C:\VerixVAps\VRXSDK
 #TESTROOT = C:\GitHub\OSSQA
 #TLIBOBJS = -I C:\GitHub\OSSQA\tlib\Test.o -I C:\GitHub\OSSQA\tlib\TestRegistry.o -I C:\GitHub\OSSQA\tlib\tlib.o
 SDSIncludes = $(VRXSDK)\include
